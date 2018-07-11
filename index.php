@@ -1,10 +1,13 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Brand</title>
+    <title>Login - MDV</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
     <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
@@ -31,12 +34,12 @@
                     <h2 class="text-info">Log In</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
                 </div>
-                <form>
+                <form method="POST" action="assets/PHP/login.php">
                     <div class="form-group"><label for="email">Email</label><input class="form-control item" type="text" id="email"></div>
                     <div class="form-group"><label for="password">Contraseña</label><input class="form-control" type="password" id="password"></div>
                     <div class="form-group">
                         <div class="form-check"><input class="form-check-input" type="checkbox" id="checkbox"><label class="form-check-label" for="checkbox">Remember me</label></div>
-                    </div><button class="btn btn-primary btn-block" type="button">Log In</button></form>
+                    </div><button class="btn btn-primary btn-block" type="submit">Log In</button></form>
             </div>
         </section>
     </main>
